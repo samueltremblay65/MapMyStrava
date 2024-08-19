@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Map my Strava</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="" class="flex">
+        <div id="sidebar">
+            <img src="Logo2.png" height="160px" id="logo" alt="logo">
+    
+            <div class="filter_menu">
+                <ul>
+                    <li class="sport_option" id="default_sport" style="font-weight: 700;">All activities</li>
+                    <li class="sport_option">Cycling</li>
+                    <li class="sport_option">Running</li>
+                    <li class="sport_option">Swimming</li>
+                    <li class="sport_option">Hiking</li>
+                    <li class="sport_option">Tennis</li>
+                </ul>
+            </div>
+            <div class="filter_menu">
+              <ul>
+                  <li class="time_option">All time</li>
+                  <li class="time_option">Today</li>
+                  <li class="time_option"  id="default_time" style="font-weight: 700;">Last 7 days</li>
+                  <li class="time_option">Last 30 days</li>
+                  <li class="time_option">Last 12 months</li>
+              </ul>
+            </div>
+            <div id="activity_count" style="font-size: smaller;">Loading activities...</div>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <!-- prettier-ignore -->
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyCUnPw6vggHz41qcl5Rpe5JBIIRYcvL9SQ", v: "weekly"});</script>
+  </body>
+  <script src="index.js"></script>
+</html>
+
+<!-- ab7a5ced57fbeeb08cf6ca68a95a865bd4b77d65 -->
